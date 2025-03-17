@@ -1,0 +1,39 @@
+<html>
+	<head>
+		<title>Login Page</title>
+		<script language="javascript">
+			function validate(){
+							u=document.f1.u.value;
+							p=document.f1.p.value;
+							if(u=="MVSR" && p=="ITD")
+							{
+											window.alert("Login Success");
+							}
+							else{
+											window.alert("Login Failure");
+
+							}
+			}
+		</script>
+	</head>
+	<body>
+		<form name=f1>
+			<h1>Login Page</h1>
+			<table>
+				<tr>
+					<td><p>Username:</p></td>
+					<td><input type="text" id="un" name="u"/></td>
+				</tr>
+				<tr>
+                                        <td><p>Password:</p></td>
+                                        <td><input type="password" id="pwd" name="p"/></td>
+                                </tr>
+				<tr>
+					<td><input type="button" id="sub" value="submit" onclick="validate()"/></td>
+                                        <td><input type="button" value="reset"/></td>
+                                </tr>
+			</table>
+		</form>
+	</body>
+</html>
+
